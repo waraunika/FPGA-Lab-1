@@ -18,7 +18,7 @@ This repository serves as the assignment submission for Elective Classes on FPGA
 | Roll no. | 079BEI008 |
 
 During the session of Lab-3, we were instructed to complete our cpu as well as test in Vivado software, based on architecture as presented below in the figure provided by the lab instructor:
-![Base architecture template to work with](./attachmnets/base_arch.png)
+![Base architecture template to work with](./attachments/base_arch.png)
 After the lab session, we were tasked to complete the entire CPU with the following title of assignment
 > `Submit the completed 8-bit Processor Lab Project that was finished during the lab session after completing the previous assignment.`
 
@@ -26,7 +26,7 @@ For the submission, here are the verilog files (.v) with their testbenches.
 
 Also, provided is the new architecture that was more detailed and was customized to fit my view.
 
-![new-architecture](attachmnets/new-architecture.png)
+![new-architecture](attachments/new-architecture.png)
 
 ---
 
@@ -76,12 +76,11 @@ Steps:
 6. Run: `gtkwave cpu.vcd` (file name depends on what is set by testbench)
 
 Point to be noted:
-- Since I have many instructions, i have categorized them individually for their instruction type. and created a [test_conditions](./test_conditions) directory.
+- Since I have many instructions, I have categorized them individually for their instruction type, and created a [test_conditions](./cpu_test_conditions) directory according to their usage/program.
 - This directory houses one folder for each category of instruction.
-- Each folder then contains 2 files:
-	- inst_memory.v: the instructions for the control unit to get
-	- control_unit_tb.v: the actual testbench.
-- Just replace the content of root directory by the respective testbench and instruction memory module.
+- Each folder then contains 1 file:
+	- inst_memory.v: the instructions for the control unit to get for the CPU to run.
+	- Just replace the content of root directory by the respective instruction memory module.
 - and rerun the compilation/simulation for desired instruction type.
 
 #### ALU Itself
@@ -99,13 +98,13 @@ Point to be noted:
 #### Screenshots
 
 1. Output for Bit Counter program in Reg 0: output = 5 in Reg 2.
-![Bit Counter Output](attachmnets/bit_counter.png)
-![](attachmnets/2026-07-12-11-08-41.png)
+![Bit Counter Output](attachments/bit_counter.png)
+![](attachments/2026-07-12-11-08-41.png)
 2. Sum of first 5 Natural Numbers.:
-![Sum of 5 and carry with call](attachmnets/sum_of_5.png)
+![Sum of 5 and carry with call](attachments/sum_of_5.png)
 
 3. Output for arithmetic and logical instructions:
-![Normal Operations](attachmnets/no_branch.png)
+![Normal Operations](attachments/no_branch.png)
 
 4. Sample operations where we can loop through RST operation:
-![Sample operations](attachmnets/sample_ops.png)
+![Sample operations](attachments/sample_ops.png)
