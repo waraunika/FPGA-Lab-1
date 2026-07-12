@@ -1,0 +1,49 @@
+$date
+	Tue Jun 30 08:10:36 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module twos_comp_tb $end
+$scope module uut $end
+$var wire 8 ! x [7:0] $end
+$var wire 8 " y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx "
+bx !
+$end
+#10
+b0 "
+b0 !
+#20
+b11101111 "
+b10001 !
+#30
+b10111101 "
+b1000011 !
+#40
+b10010110 "
+b1101010 !
+#50
+b1111110 "
+b10000010 !
+#60
+b1010110 "
+b10101010 !
+#70
+b110010 "
+b11001110 !
+#80
+b10110 "
+b11101010 !
+#90
